@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestProject.Context.Contracts\TestProject.Context.Contracts.csproj" />
+    <ProjectReference Include="..\TestProject.Repositories.Contracts\TestProject.Repositories.Contracts.csproj" />
+    <ProjectReference Include="..\TestProject.Services.Contracts\TestProject.Services.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
